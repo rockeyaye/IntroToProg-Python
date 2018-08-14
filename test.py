@@ -50,7 +50,7 @@
 # Step 1
 # When the program starts, load the any data you have
 # in a text file called ToDo.txt into a python Dictionary.
-File = "C:\_PythonClass\Todo.txt"
+File = "C:\_PythonClass\ToDo.txt"
 strData = ""
 dicRow = {}
 lstTable = []
@@ -106,7 +106,6 @@ while(True):
     # Step 5
     # Remove a new item to the list/Table
     elif(strChoice == '3'):
-        #5a-Allow user to indicate which row to delete
         strDelete = ()
         while not strDelete:
             strDelete = input("Please Enter Task to be Deleted: ").strip().title()
@@ -118,8 +117,7 @@ while(True):
                 del lstTable[intRow]
                 BlankRemoved = True
             intRow += 1
-        #end for loop
-        #5b-Update user on the status
+        # end for loop
         if(BlankRemoved == True):
             print("Remove:", strDelete)
         else:
